@@ -1,0 +1,34 @@
+[
+    {
+        "libelle":"mangue",
+        "prix":"3000",
+        "photo":"https://www.cultures-sucre.com/Medias/article/mangue@44f45bdb-c37a-4c1f-adc4-877ef47f4bed.jpg"
+    },
+
+    {
+        "libelle":"fraise",
+        "prix":"5000",
+        "photo":"https://i.notretemps.com/2000x1125/smart/2021/05/31/la-fraise-a-deguster-sans-moderation.jpeg"
+    },
+
+    {
+        "libelle":"papaye",
+        "prix":"7000",
+        "photo":"./images/papaye.jpg"
+    },
+    {
+        "libelle":"banane",
+        "prix":"1000",
+        "photo": "./images/banane.jpg"
+    },
+    {
+        "libelle":"pomme",
+        "prix":"2000",
+        "photo":"./images/pomme.jpg"
+    }
+
+
+    
+
+
+]

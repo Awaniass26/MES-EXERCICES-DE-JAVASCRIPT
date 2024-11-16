@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<title>Document</title>
+</head>
+
+<body>
+    <h1 class="text-center text-2xl"><b>Liste des fruits</b></h1>
+    <table class="mt-6 w-full h-64 border-collapse border-2 border-black">
+        <thead class="bg-red-500">
+            <tr>
+                <th class="border px-4 py-2">ID</th>
+                <th class="border px-4 py-2">Libelle</th>
+                <th class="border px-4 py-2">Prix</th>
+                <th class="border px-4 py-2">Photo</th>
+            </tr>
+        </thead>
+        <tbody id="fruit" class="text-center">
+        </tbody>
+    </table>
+
+    <script>
+        async function datas() {
+            try {
+                const response = await fetch('Data.json');
+
+                if (!response.ok) {
+                    throw new Error(`Erreur : ${response.status} - ${response.statusText}`);
+                }
+
+                const data = await response.json();
+
+                const tbody = document.getElementById('fruit');
+
+                data.forEach((fruits, index) => {
+                    const row = document.createElement('tr');
+                    const idClass = (index + 1) % 2 === 0 ? 'bg-red-100' : '';
+                    row.innerHTML = `
+                        <td class="border px-4 py-2">${index + 1}</td>
+                        <td class="border px-4 py-2">${fruits.libelle}</td>
+                        <td class="border px-4 py-2">${fruits.prix}</td>
+                        <td class="border px-4 py-2">
+                    <img src="${fruits.photo || 'placeholder.jpg'}" 
+                         alt="${fruits.libelle || 'Image indisponible'}" 
+                         class="max-w-[100px] h-auto mx-auto" />
+                </td>                `;
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error(error);
+                alert("Erreur");
+            }
+        }
+
+        datas();
+    </script>
+</body>
+
+</html>

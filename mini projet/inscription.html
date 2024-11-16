@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Connexion</title>
+</head>
+
+<body>
+    <form id="FormInscription" class="formulaire">
+        <h1 class="text">Inscription</h1>
+        <div>
+            <i class="fas fa-user-circle"></i>
+            <label for="name"> Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Full name">
+            <span id="nameError" class="error-message"></span> 
+        </div>
+        <div>
+            <i class="fas fa-user"></i>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="username">
+            <span id="usernameError" class="error-message"></span>
+        </div>
+        <div>
+            <i class="fas fa-envelope"></i>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email">
+            <span id="emailError" class="error-message"></span> 
+        </div>
+        <div>
+            <i class="fas fa-lock"></i>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password">
+            <span id="passwordError" class="error-message"></span> 
+        </div>
+        <div>
+            <i class="fas fa-key"></i>
+            <label for="password"> Comfirm password</label>
+            <input type="password" id="passwordconf" name="password" placeholder="password">
+        </div>
+        <div class="button">
+            <button type="submit">S'inscrire</button>
+        </div>
+        <a href="connexion.html" class="link">Déjà inscrit ? Connectez-vous ici</a>
+
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

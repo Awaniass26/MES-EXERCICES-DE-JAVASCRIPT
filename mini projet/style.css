@@ -1,0 +1,103 @@
+.formulaire {
+    width: 500px;
+    height: auto;
+    border: 15px solid green;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 320px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+
+input[type=text],
+select {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type=password],
+select {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email],
+select {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button [type=submit] {
+    width: 500px;
+    background-color: green;
+    color: white;
+    padding: 12px 17px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container{
+    background-color: lightgreen;
+}
+
+.link{
+    color: black;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none; 
+}
+
+
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.button1 [type=submit] {
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 12px 17px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
